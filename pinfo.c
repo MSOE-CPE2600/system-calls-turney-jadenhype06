@@ -1,7 +1,8 @@
 /* 
 * Filename: pinfo.c
 * Author: Jaden Hipe
-* Date: 10/31/2025
+* Course Section: 112
+* Date: 11/3/2025
 * Compile info: make pinfo.c
 * Description: Provides pid information using system calls.
 */ 

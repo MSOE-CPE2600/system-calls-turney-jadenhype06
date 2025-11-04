@@ -1,6 +1,7 @@
 /* 
 * Filename: pinfo.c
 * Author: Jaden Hipe
+* Course Section: 112
 * Date: 11/3/2025
 * Compile info: make pmod.c
 * Description: Reduces a pid priority by 10, sleeps for 1.8 billion nanoseconds, and prints an exit message.
@@ -21,6 +22,7 @@ int main(int argc, char* argv[])
     spec.tv_nsec = 837272638;
     
     printf("Sleeping...\n");
+    //Don't worry about 2nd argument
     nanosleep(&spec, NULL);
     printf("End of Program\n");
     return 0;

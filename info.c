@@ -1,7 +1,8 @@
 /* 
 * Filename: info.c
 * Author: Jaden Hipe
-* Date: 10/30/2025
+* Course Section: 112
+* Date: 11/3/2025
 * Compile info: make info.c
 * Description: Provides maintenance information using system calls.
 */ 
@@ -23,7 +24,7 @@ int main(int argc, char* argv[])
     struct utsname machine_info;
     uname(&machine_info);
     printf("Network Name: %s\n",machine_info.nodename);
-    printf("System Name: %s\n",machine_info.sysname);
+    printf("Operating System: %s\n",machine_info.sysname);
     printf("OS Release: %s\n",machine_info.release);
     printf("OS Version: %s\n",machine_info.version);
     printf("Hardware Type: %s\n",machine_info.machine);
@@ -34,8 +35,8 @@ int main(int argc, char* argv[])
     //Number of Bytes
     long phys_bytes = sysconf(_SC_PHYS_PAGES) * getpagesize();
     long free_bytes = sysconf(_SC_AVPHYS_PAGES) * getpagesize();
-    printf("Amount of Physical Memory: %ld\n", phys_bytes);
-    printf("Amount of Free Memory: %ld\n", free_bytes);
+    printf("Amount of Physical Memory: %ld Bytes\n", phys_bytes);
+    printf("Amount of Free Memory: %ld Bytes\n", free_bytes);
 
     return 0;
 }
