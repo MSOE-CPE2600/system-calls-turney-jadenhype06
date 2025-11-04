@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 {
     //Using clock_gettime
     struct timespec spec;
-    int time = clock_gettime(CLOCK_REALTIME, &spec);
+    clock_gettime(CLOCK_REALTIME, &spec);
     printf("Time (ns): %ld\n", spec.tv_nsec);
     
 
